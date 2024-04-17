@@ -100,7 +100,6 @@ diana_ross.favorites.create(favoritable: talk_to_me)
 diana_ross.recently_heards.create(album: black)
 diana_ross.recently_heards.create(album: metal)
 
-
 michael_jackson = User.create(name: "Michael Jackson", email: "michael@jackson.com", password: "123456", password_confirmation: "123456")
 michael_jackson.favorites.create(favoritable: requiem_por_amazonia)
 michael_jackson.favorites.create(favoritable: travel_to_brasilia)
