@@ -6,6 +6,6 @@ const DiscoveryScreen = () => {
             <div>Discovery Screen</div>
         </Fragment>
 
-);
+)
 }
 export default DiscoveryScreen;
