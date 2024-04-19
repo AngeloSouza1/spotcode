@@ -14,7 +14,7 @@ ENV RAILS_ENV="production" \
     BUNDLE_WITHOUT="development"
 
 
-# Throw-away build stage to reduce size of final image
+# Throw-away build stage to reduce size of final images
 FROM base as build
 
 # Install packages needed to build gems
@@ -37,7 +37,7 @@ RUN bundle exec bootsnap precompile app/ lib/
 RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
 
-# Final stage for app image
+# Final stage for app images
 FROM base
 
 # Install packages needed for deployment

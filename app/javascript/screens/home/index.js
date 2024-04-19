@@ -5,6 +5,6 @@ const HomeScreen = () => {
         <Fragment>
            Home Screen
         </Fragment>
-    )
+    );
 }
 export default HomeScreen;

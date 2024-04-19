@@ -15,7 +15,7 @@ country = Category.create(name: "Country")
 country.image.attach(io: File.open("#{tmp_dir}/seed_files/country.jpg"), filename: "country.jpg")
 
 # jazz = Category.create(name: "Jazz")
-# jazz.image.attach(io: File.open("#{tmp_dir}/seed_files/jazz.jpg"), filename: "jazz.jpg")
+# jazz.images.attach(io: File.open("#{tmp_dir}/seed_files/jazz.jpg"), filename: "jazz.jpg")
 
 
 # ROCK

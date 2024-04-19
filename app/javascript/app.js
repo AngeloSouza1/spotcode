@@ -1,15 +1,17 @@
 import React, { Fragment } from 'react';
 import 'bulma.min.css';
+import { BrowserRouter } from 'react-router-dom';
 import 'app.scss';
 import Routes from './routes';
-import { BrowserRouter } from 'react-router-dom'
+import Menu from './components/common/menu';
 
 const App = () => {
     return(
 
            <Fragment>
                <BrowserRouter>
-                      <Routes/>
+                   <Menu />
+                   <Routes />
                </BrowserRouter>
            </Fragment>
 
