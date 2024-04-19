@@ -2,8 +2,9 @@ import React, { Fragment, useState } from 'react';
 
 const FavoritesScreen = () => {
     return(
-        Favorites Screen
-
-);
+        <Fragment>
+            <div>Favorites Screen</div>
+        </Fragment>
+   );
 }
 export default FavoritesScreen;

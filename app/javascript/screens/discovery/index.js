@@ -2,7 +2,10 @@ import React, { Fragment, useState } from 'react';
 
 const DiscoveryScreen = () => {
     return(
-        Discovery Screen
+        <Fragment>
+            <div>Discovery Screen</div>
+        </Fragment>
+
 );
 }
 export default DiscoveryScreen;

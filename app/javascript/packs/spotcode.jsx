@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import App from '../app';
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-     <div>Hello Spotcode  :)</div>,
+     <App/>,
       document.getElementById('root'),
   )
 })

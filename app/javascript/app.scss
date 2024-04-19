@@ -1,0 +1,13 @@
+// Definir suas próprias variáveis de cor
+$dark: #333;
+
+// Importar os estilos do Bulma
+@import 'bulma.min.css';
+
+// Adicionar estilos personalizados abaixo
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: $dark;
+}
