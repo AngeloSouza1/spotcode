@@ -91,6 +91,8 @@ music_wont.file.attach(io: File.open("#{tmp_dir}/seed_files/Country/country1/the
 
 freddie_mercury = User.create(name: "Freddie Mercury", email: "freddie@mercury.com", password: "123456", password_confirmation: "123456")
 freddie_mercury.favorites.create(favoritable: travel_to_brasilia)
+freddie_mercury.favorites.create(favoritable: start_again)
+
 freddie_mercury.recently_heards.create(album: live)
 freddie_mercury.recently_heards.create(album: metal)
 
