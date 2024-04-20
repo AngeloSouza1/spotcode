@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
-import SectionWrapper from '../../components/common/section_wrapper'
-import { Button, Columns, Heading } from 'react-bulma-components';
-import styled from 'styled-components'
+import SectionWrapper from '../../components/common/section_wrapper';
+import { Columns, Heading, Button } from 'react-bulma-components';
+import styled from 'styled-components';
 
 const MainHeading = styled(Heading)`
   margin-top: 50px;
@@ -14,6 +14,7 @@ const DescriptionList = styled.ul`
 const ButtonSubscribe = styled(Button)`
   border-width: 2px;
   margin-top: 50px;
+
 `
 const HomeScreen = () => {
     return(
@@ -26,7 +27,7 @@ const HomeScreen = () => {
                 </Columns.Column>
             </Columns>
             <Columns className="is-centered is-mobile">
-                <Columns.Column mobile={{size: 8, offset: 1}} desktop={{size: 4, offset: 2}}>
+                <Columns.Column mobile={{size: 8, offset: 1 }} desktop={{size: 4, offset: 2 }}>
                     <DescriptionList className='has-text-white'>
                         <li>Suas músicas <b>Favoritas</b></li>
                         <li>Seus <b>Podcasts</b></li>
@@ -35,13 +36,14 @@ const HomeScreen = () => {
                     </DescriptionList>
                 </Columns.Column>
             </Columns>
-            <Columns ClasName="has-text-centered">
-                <a href='users/sign_in'>
+            <Columns className="has-text-centered">
+                <Columns.Column>
+                    <a href='users/sign_up'>
+                        <ButtonSubscribe className='is-success is-outlined is-large has-text-white'>CADASTRAR
+                            AGORA</ButtonSubscribe>
+                    </a>
+                </Columns.Column>
 
-                </a>
-                <ButtonSubscribe ClassName='is-sucess is-outlined is-large has-text-white'>
-                    CADASTRAR AGORA
-                </ButtonSubscribe>
             </Columns>
         </SectionWrapper>
     );
