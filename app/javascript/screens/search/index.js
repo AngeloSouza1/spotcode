@@ -9,5 +9,5 @@ const SearchScreen = () => {
         </Fragment>
 );
 }
-export default SearchScreen
+export default SearchScreen;
 
