@@ -6,6 +6,7 @@ const SearchBar = (props) => {
     const Search = (e) => {
         if (e.key === 'Enter') {
             props.featchSearch(query);
+            setQuery("")
         }
     }
 

@@ -9,13 +9,13 @@ rock = Category.create(name: "Rock")
 rock.image.attach(io: File.open("#{tmp_dir}/seed_files/rock.jpg"), filename: "rock.jpg")
 
 blues = Category.create(name: "Blues")
-blues.image.attach(io: File.open("#{tmp_dir}/seed_files/blues.png"), filename: "blues.png")
+blues.image.attach(io: File.open("#{tmp_dir}/seed_files/blues.jpg"), filename: "blues.jpg")
 
 country = Category.create(name: "Country")
 country.image.attach(io: File.open("#{tmp_dir}/seed_files/country.jpg"), filename: "country.jpg")
 
-# jazz = Category.create(name: "Jazz")
-# jazz.images.attach(io: File.open("#{tmp_dir}/seed_files/jazz.jpg"), filename: "jazz.jpg")
+ jazz = Category.create(name: "Jazz")
+ jazz.image.attach(io: File.open("#{tmp_dir}/seed_files/jazz.jpg"), filename: "jazz.jpg")
 
 
 # ROCK
@@ -73,16 +73,16 @@ music_wont.file.attach(io: File.open("#{tmp_dir}/seed_files/Country/country1/the
 
 # # JAZZ
 #
-# jazz_me = Artist.create(name: "Jazz Me Up")
-# jazz_me.photo.attach(io: File.open("#{tmp_dir}/seed_files/Jazz/jazz1/capa.jpg"), filename: "capa.jpg")
-#
-# live_jazz = jazz_me.albums.create(title: "We were",  date: Time.strptime("17/05/2011", "%d/%m/%Y"), category: jazz)
-# live_jazz.cover.attach(io: File.open("#{tmp_dir}/seed_files/Jazz/jazz1/capa.jpg"), filename: "capa.jpg")
-#
-# we_were = live_jazz.songs.create(title: "We were", played_count: Random.rand(1000))
-# we_were.file.attach(io: File.open("#{tmp_dir}/seed_files/Jazz/jazz1/we_were.mp3"), filename: "we_were.mp3")
-# turn_it = live_jazz.songs.create(title: "Turn it around", played_count: Random.rand(1000))
-# turn_it.file.attach(io: File.open("#{tmp_dir}/seed_files/Jazz/jazz1/turn_it_around.mp3"), filename: "turn_it_around.mp3")
+jazz_me = Artist.create(name: "Jazz Me Up")
+jazz_me.photo.attach(io: File.open("#{tmp_dir}/seed_files/Jazz/jazz1/capa.jpg"), filename: "capa.jpg")
+
+live_jazz = jazz_me.albums.create(title: "We were",  date: Time.strptime("17/05/2011", "%d/%m/%Y"), category: jazz)
+live_jazz.cover.attach(io: File.open("#{tmp_dir}/seed_files/Jazz/jazz1/capa.jpg"), filename: "capa.jpg")
+
+we_were = live_jazz.songs.create(title: "We were", played_count: Random.rand(1000))
+we_were.file.attach(io: File.open("#{tmp_dir}/seed_files/Jazz/jazz1/we_were.mp3"), filename: "we_were.mp3")
+turn_it = live_jazz.songs.create(title: "Turn it around", played_count: Random.rand(1000))
+turn_it.file.attach(io: File.open("#{tmp_dir}/seed_files/Jazz/jazz1/turn_it_around.mp3"), filename: "turn_it_around.mp3")
 
 
 #========================
