@@ -35,8 +35,9 @@ O projeto Spotcode é desenvolvido utilizando as seguintes tecnologias e ferrame
 💡 Veja!
 
 <a href="https://github.com/AngeloSouza1/tmp/blob/main/new_recording_-_23_04_2024%2C_19_18_49%20(720p).mp4" target="_blank">
-  <img src="https://img.shields.io/badge/Assista ao video de%20Demonstração-darkgreen" alt="Demonstração">
+  <img src="https://img.shields.io/badge/Assista_ao_Vídeo_de_Demonstração-DarkGreen" alt="Demonstração">
 </a>
+
 
 ---
 
@@ -44,8 +45,6 @@ O projeto Spotcode é desenvolvido utilizando as seguintes tecnologias e ferrame
 Para executar a aplicação localmente em seu ambiente de desenvolvimento, siga estas etapas:
 
 🔹 Clone o repositório em sua máquina local.
-
-https://github.com/AngeloSouza1/tmp/blob/main/new_recording_-_23_04_2024%2C_19_18_49%20(720p).mp4
 
   ```bash
 git clone https://github.com/AngeloSouza1/spotcode.git
